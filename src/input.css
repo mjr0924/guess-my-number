@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .number {
+    transform: translate(-50%, 50%);
+    margin: -4rem 0;
+  }
+}
