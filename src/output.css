@@ -445,8 +445,7 @@ video {
 }
 
 .number {
-  transform: translate(-50%, 50%);
-  margin: -4rem 0;
+  transform: translate(0%, 50%);
 }
 
 *, ::before, ::after {

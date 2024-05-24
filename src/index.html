@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>guess my number</title>
     <link rel="stylesheet" href="output.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
 </head>
 
-<body class="bg-neutral-800 font-base text-slate-200 mx-auto w-4/5">
+<body style="background-color: #222;" class="bg-neutral-800 font-base text-slate-200 mx-auto w-4/5">
     <header class="relative my-12 ">
         <div class="flex justify-between my-8">
-            <button class="p-8 bg-slate-200 hover:bg-slate-300 text-slate-700">Again!</button>
+            <button class="again p-8 bg-slate-200 hover:bg-slate-300 text-slate-700">Again!</button>
             <p>(Between 1 and 20)</p>
         </div>
         <h1 class="text-4xl text-center text-slate-200 text-5xl">Guess My Number</h1>
         <div class="my-8 flex justify-center">
-            <div class="w-[130px] h-[110px] text-black text-center p-8  text-4xl bg-slate-200 text-slate-700 ">?</div>
+            <div class="w-[130px] h-[110px] text-black text-center p-8  text-4xl bg-slate-200 text-slate-700 number">?</div>
         </div>
     </header>
 
     <!-- Main content of the page goes here -->
     <main class="my-32 flex flex-wrap justify-center items-center gap-8">
         <div class="left flex flex-col justify-center items-center">
-            <input type="number" class="bg-transparent border-4 text-xl text-center py-8 mb-8">
-            <button class="bg-slate-200 hover:bg-slate-300 text-slate-700 p-4 ">Check!</button>
+            <input type="number" class="bg-transparent border-4 text-xl text-center py-8 mb-8 guess">
+            <button class="check bg-slate-200 hover:bg-slate-300 text-slate-700 p-4 ">Check!</button>
         </div>
         <div class="right flex flex-col items-start gap-4 text-2xl mt-[-2rem]">
             <p class="message">start guessing...</p>
@@ -34,8 +32,6 @@
             <p class="label-highscore">🥇 Highscore: <span class="highscore">0</span></p>
         </div>
     </main>
-
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
-
 </html>
