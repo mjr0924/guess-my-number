@@ -8,7 +8,7 @@ let message = document.querySelector(".message");
 
 check.addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
-  console.log(guess, randomNumber);
+  // console.log(guess, randomNumber);
 
   // when no input
   if (!guess) {
@@ -47,7 +47,7 @@ check.addEventListener("click", function () {
 
 let again = document.querySelector(".again");
 again.addEventListener("click", function () {
-  console.log("reset every thing");
+  // console.log("reset every thing");
   score = 20;
   document.querySelector(".score").textContent = score;
   randomNumber = Math.trunc(Math.random() * 21);
